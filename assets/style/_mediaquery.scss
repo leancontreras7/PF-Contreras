@@ -1,0 +1,44 @@
+@use '_commons' as c;
+
+
+@media only screen and (min-width: 768px) {
+    nav ul li {
+      font-family: sans-serif;
+      flex-direction: row;
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+
+    .contenedor__gallery{
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenedor__tipologias{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+} 
+
+
+@media only screen and (min-width: 1280px){
+
+    .contenedor__gallery{
+    
+    grid-template-columns:repeat(3,1fr);
+
+    }
+
+
+   
+
+
+}

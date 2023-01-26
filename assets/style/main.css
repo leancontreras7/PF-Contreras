@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "sofia sans";
+  font-weight: bold;
+}
+
+.video__index {
+  box-shadow: 0px 10px 10px #000;
+  margin-bottom: 20px;
+}
+
+#menuylogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  list-style: none;
+  background: linear-gradient(to right, #000, #484848);
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+}
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  text-decoration: none;
+}
+
+li a.active, li a:hover {
+  background: black;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover, li a.active {
+    color: #fff;
+    background: blue;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+#container__nosotros .container__nosotros__foto {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 10px #000;
+}
+#container__nosotros .container__nosotros__texto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+
+.contenedor__gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(235, 235, 235);
+}
+.contenedor__gallery .gallery__fotos {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  border: solid 1px rgb(255, 255, 255);
+  box-shadow: 0px 10px 10px #000;
+}
+
+#container__tipologias {
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+#container__tipologias .tipologia {
+  margin-bottom: 15px;
+  box-shadow: 0px 10px 10px #000;
+}
+
+.contactos__container {
+  background-image: url(../img/fondocontactos.jpg);
+}
+
+.form-label {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  font-size: 20px;
+}
+
+.form-text {
+  color: black;
+  font-size: 20px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul li {
+    font-family: sans-serif;
+    flex-direction: row;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  .contenedor__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenedor__tipologias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contenedor__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+footer {
+  background: wheat;
+  height: 80px;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  padding-top: 10px;
+}
+footer p a {
+  font-size: 8px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}/*# sourceMappingURL=main.css.map */
