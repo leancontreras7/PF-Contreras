@@ -1,25 +1,36 @@
 @use '_commons' as c;
 
-.contactos__container{
 
-    background-image: url(../img/fondocontactos.jpg);
-    padding: 40px;
+.contactos__container__form{
 
-    .form-label{
-        @include c.sombras;
-        font-size: 20px;
-       
-    }
-    
-    .form-text{
-    
-        color: c.$color-titulares;
-        font-size: 20px;
-        @include c.sombras;
-    }
-
-
+    display: grid;
 
 }
 
+.formulario{
+    width: 100%;
+    padding: 40px;
+    background-image:linear-gradient(
+       0deg, rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ) 
+    ,url(../img/fondocontactos.jpg);
+    
+    
+
+
+    .textos__form{
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.fotocontactos{
+
+    width: 80%;
+    margin: 10%;
+    display: block;
+   
+}
 

@@ -225,18 +225,24 @@ li a.active, li a:hover {
   margin-bottom: 30px;
 }
 
-.contactos__container {
-  background-image: url(../img/fondocontactos.jpg);
+.contactos__container__form {
+  display: grid;
+}
+
+.formulario {
+  width: 100%;
   padding: 40px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondocontactos.jpg);
 }
-.contactos__container .form-label {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+.formulario .textos__form {
+  color: white;
   font-size: 20px;
 }
-.contactos__container .form-text {
-  color: black;
-  font-size: 20px;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+
+.fotocontactos {
+  width: 80%;
+  margin: 10%;
+  display: block;
 }
 
 @media only screen and (min-width: 768px) {
@@ -286,6 +292,10 @@ li a.active, li a:hover {
   }
   .video__index {
     display: none;
+  }
+  .carousel__index {
+    width: 80%;
+    margin: 30px 10%;
   }
 }
 @media only screen and (min-width: 1280px) {
