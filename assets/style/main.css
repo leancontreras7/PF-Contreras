@@ -15,19 +15,53 @@
   font-size: 20px;
 }
 
-.video__index {
+.carousel__index {
+  width: 80%;
+  margin: 10%;
   box-shadow: 0px 10px 10px #000;
-  margin-bottom: 20px;
 }
 
-.card__index__enlaces {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #000;
+.frase__index {
+  text-transform: uppercase;
+  font-size: bold;
+  color: white;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/tipologia3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.card__index__enlaces:hover {
-  background-color: yellow;
-  color: #000;
+
+.div__index__foto1 {
+  width: 80%;
+  margin: 10%;
+  box-shadow: 0px 10px 10px #000;
+  grid-area: foto1;
+}
+
+.div__index__foto2 {
+  width: 80%;
+  margin: 10%;
+  box-shadow: 0px 10px 10px #000;
+  grid-area: foto2;
+}
+
+.div__index__texto {
+  width: 80%;
+  margin: 10%;
+  display: none;
+  grid-area: texto;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.video__index {
+  width: 70%;
+  height: 100%;
+  margin: 15%;
+  box-shadow: 0px 10px 10px #000;
 }
 
 #menuylogo {
@@ -239,10 +273,28 @@ li a.active, li a:hover {
     width: 90%;
     margin: 5%;
   }
+  #div__index {
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "foto1 foto2" "foto1 texto";
+    background-color: rgb(248, 189, 179);
+  }
+  .div__index__texto {
+    display: block;
+  }
+  .video__index {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .contenedor__gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .carousel__index {
+    width: 60%;
+    margin: 30px 20%;
   }
 }
 footer {

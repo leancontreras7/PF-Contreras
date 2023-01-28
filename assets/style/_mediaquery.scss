@@ -55,10 +55,38 @@
         }
 
     }
-    
 
+    
+  
+
+    
+    #div__index{
+        width: 90%;
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        
+        "foto1 foto2"
+        "foto1 texto"
+        
+        ;
+        background-color: rgb(248, 189, 179);
+    }
+
+    .div__index__texto{
+
+        display: block;
+    }
+
+    .video__index{
+
+        display: none;
+    }
 
 } 
+
+
 
 
 @media only screen and (min-width: 1280px){
@@ -69,10 +97,15 @@
 
     }
 
+    .carousel__index{
+
+        width: 60%;
+        margin: 30px 20%;
+    }
+
    
 
-
-   
+    
 
 
 }
