@@ -128,9 +128,16 @@ li a.active, li a:hover {
     left: 0;
   }
 }
+#container__nosotros {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100%;
+}
 #container__nosotros .container__nosotros__foto {
   width: 100%;
-  padding-top: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
   box-shadow: 0px 10px 10px #000;
 }
@@ -138,7 +145,9 @@ li a.active, li a:hover {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.3em;
+  width: 100%;
 }
 
 .contenedor__gallery {
@@ -158,34 +167,39 @@ li a.active, li a:hover {
 
 #container__tipologias {
   background-color: rgb(235, 235, 235);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  margin: 10%;
 }
-#container__tipologias .tipologia {
+#container__tipologias .container__tipologias__divs__titulo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+#container__tipologias .container__tipologias__divs__vivienda {
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 15px;
   box-shadow: 0px 10px 10px #000;
 }
-#container__tipologias .imagenes-tipo {
-  margin: 20px;
-  width: 80%;
+#container__tipologias .container__tipologias__divs__plano {
+  width: 100%;
   box-shadow: 0px 10px 10px #000;
+  margin-bottom: 30px;
 }
 
 .contactos__container {
   background-image: url(../img/fondocontactos.jpg);
+  padding: 40px;
 }
-
-.form-label {
+.contactos__container .form-label {
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
   font-size: 20px;
 }
-
-.form-text {
+.contactos__container .form-text {
   color: black;
   font-size: 20px;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
@@ -202,13 +216,28 @@ li a.active, li a:hover {
   .contenedor__gallery {
     grid-template-columns: 1fr 1fr;
   }
-  .contenedor__tipologias {
+  #container__nosotros {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  #container__nosotros .container__nosotros__texto {
+    margin-left: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
+  }
+  #container__tipologias {
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: 5%;
+  }
+  #container__tipologias .container__tipologias__divs {
+    width: 90%;
+    margin: 5%;
   }
 }
 @media only screen and (min-width: 1280px) {

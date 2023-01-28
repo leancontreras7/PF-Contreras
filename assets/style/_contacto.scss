@@ -3,18 +3,23 @@
 .contactos__container{
 
     background-image: url(../img/fondocontactos.jpg);
+    padding: 40px;
+
+    .form-label{
+        @include c.sombras;
+        font-size: 20px;
+       
+    }
+    
+    .form-text{
+    
+        color: c.$color-titulares;
+        font-size: 20px;
+        @include c.sombras;
+    }
+
+
+
 }
 
 
-.form-label{
-    @include c.sombras;
-    font-size: 20px;
-   
-}
-
-.form-text{
-
-    color: c.$color-titulares;
-    font-size: 20px;
-    @include c.sombras;
-}

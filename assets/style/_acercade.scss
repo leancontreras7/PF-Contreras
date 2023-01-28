@@ -3,10 +3,16 @@
 
 #container__nosotros{
     
-
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    
+    
     .container__nosotros__foto{
         width: 100%;
-        padding-top: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
         text-align: center;
         box-shadow: 0px 10px 10px #000;
         
@@ -18,7 +24,9 @@
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
         margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 1.3em;
+        width: 100%;
     }
 
 }

@@ -16,15 +16,47 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .contenedor__tipologias{
+    
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
+
+    #container__nosotros{
+
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 40px;
+        margin-top: 20px;
+
+
+        .container__nosotros__texto{
+
+            margin-left: 15px;
+            display: flex;
+	        flex-direction: row;
+	        flex-wrap: nowrap;
+	        justify-content: center;
+	        align-items: center;
+	        align-content: center;
+        }
+       
+
+    }  
+
+
+
+    #container__tipologias{
+        grid-template-columns: 50% 50%;
+        width: 90%;
+        margin: 5%;
+
+        .container__tipologias__divs{
+
+            width: 90%;
+            margin: 5%;
+            
+        }
+
     }
+    
+
 
 } 
 
@@ -36,6 +68,8 @@
     grid-template-columns:repeat(3,1fr);
 
     }
+
+   
 
 
    
