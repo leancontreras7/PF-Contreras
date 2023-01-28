@@ -53,6 +53,7 @@
   li a.active, li a:hover{
     background: black;
     transition: .5s;
+    color: orange;
   }
 
 
@@ -111,7 +112,7 @@
     }
     li a:hover, li a.active{
         color: #fff;
-        background: blue;
+        background: orange;
         
     }
     #check:checked ~ ul{

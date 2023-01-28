@@ -20,6 +20,16 @@
   margin-bottom: 20px;
 }
 
+.card__index__enlaces {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+.card__index__enlaces:hover {
+  background-color: yellow;
+  color: #000;
+}
+
 #menuylogo {
   display: flex;
   flex-direction: row;
@@ -63,6 +73,7 @@ nav ul li a {
 li a.active, li a:hover {
   background: black;
   transition: 0.5s;
+  color: orange;
 }
 
 .checkbtn {
@@ -111,7 +122,7 @@ li a.active, li a:hover {
   }
   li a:hover, li a.active {
     color: #fff;
-    background: blue;
+    background: orange;
   }
   #check:checked ~ ul {
     left: 0;
@@ -157,6 +168,11 @@ li a.active, li a:hover {
 #container__tipologias .tipologia {
   margin-top: 20px;
   margin-bottom: 15px;
+  box-shadow: 0px 10px 10px #000;
+}
+#container__tipologias .imagenes-tipo {
+  margin: 20px;
+  width: 80%;
   box-shadow: 0px 10px 10px #000;
 }
 
